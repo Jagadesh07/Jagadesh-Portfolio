@@ -348,6 +348,9 @@ tr,td,th{
     #home{
         grid-template-columns: repeat(1,1fr);
     }
+    .right{
+        align-content: start;
+    }
     .left img:nth-child(2){
         width: 30rem;
     }
