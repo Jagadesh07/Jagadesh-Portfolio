@@ -355,10 +355,6 @@ tr,td,th{
     .left img:nth-child(2){
         width: 30rem;
     }
-    .card-wrapper{
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 2rem;
-    }
     .contact-wrapper{
         grid-template-columns: repeat(1,1fr);
         row-gap: 5rem;
