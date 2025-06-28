@@ -47,9 +47,7 @@ body{
     transition: 0.5s ease;
 }
 .nav-bar h1:hover::after{
-    width: 100%;    .card img{
-        width: 7rem;
-    }
+    width: 100%; 
 }
 .nav-bar ul{
     display: flex;
