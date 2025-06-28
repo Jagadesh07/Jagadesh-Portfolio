@@ -346,6 +346,9 @@ tr,td,th{
         padding-top: 0;
         grid-template-columns: repeat(1,1fr);
     }
+    .right{
+        align-content: start;
+    }
     .left{
         align-items: end;
     }
@@ -354,6 +357,7 @@ tr,td,th{
     }
     .card-wrapper{
         grid-template-columns: repeat(1,1fr);
+        row-gap: 2rem;
     }
     .contact-wrapper{
         grid-template-columns: repeat(1,1fr);
