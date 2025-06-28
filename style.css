@@ -98,7 +98,7 @@ body{
     display: grid;
     width: 100%;
     min-height: 100vh;
-    padding-top: 5rem;
+    padding-top: 3rem;
     grid-template-columns: repeat(2,1fr);
 }
 .left{
@@ -176,7 +176,7 @@ table{
     padding: 0 3rem;
 }
 tr,td,th{
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border: 2px solid black;
     font-family: var(--main-font);
     font-size: var(--pc-main-size);
@@ -225,6 +225,7 @@ tr,td,th{
 }
 .contact-left h2{
     font-family: var(--header-font);
+    font-size: var(--pc-header-size);
 }
 .contact-left h2 span{
     color: gray;
@@ -245,9 +246,10 @@ tr,td,th{
     border: 1px solid black;
     border-radius: 5px;
     font-family: var(--main-font);
+    font-size: var(--pc-main-size);
 }
 .input-container textarea{
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 2rem 3rem;
     margin: 1rem;
     border: 1px solid black;
     border-radius: 5px;
@@ -255,6 +257,7 @@ tr,td,th{
     background-color: rgba(255, 255, 255, 0.74);
     box-sizing: border-box;
     font-family: var(--main-font);
+    font-size: var(--pc-main-size);
 }
 .input-container button{
     padding: .5rem 3rem;
@@ -316,16 +319,19 @@ tr,td,th{
 @media(max-width:1598px){
     :root{
         --pc-header-size:2rem;
-    }
-    .left{
-        align-items: end;
+        --pc-main-size:1rem;
     }
         .left img:nth-child(2){
         width: 30rem;
     }
 }
-@media(max-width:1102px){
-
+@media(max-width:1260px){
+    #home{
+        padding-top: 0;
+    }
+    .left{
+        align-items: end;
+    }
     .left img:nth-child(1){
         display: none;
     }
@@ -335,6 +341,10 @@ tr,td,th{
 }
 
 @media(max-width:840px){
+    :root{
+        --pc-header-size:2rem;
+        --pc-main-size:1rem;
+    }
     .nav-bar ul{
         display: none;
     }
@@ -345,9 +355,6 @@ tr,td,th{
     #home{
         padding-top: 0;
         grid-template-columns: repeat(1,1fr);
-    }
-    .left{
-        align-items: end;
     }
     .left img:nth-child(2){
         width: 30rem;
@@ -361,6 +368,15 @@ tr,td,th{
     }
     .contact-left{
         grid-row: 2;
+    }
+    .input-container input{
+        padding: .5rem 1.5rem;
+    }
+    .input-container textarea{
+        padding: .5rem 1.5rem;
+    }
+    .card img{
+        width: 7rem;
     }
 }
 @media(max-width:450px){
