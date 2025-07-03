@@ -6,7 +6,8 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+html{
+overflow-x:hidden;
 :root{
     --main-font:'poppins';
     --header-font:"Playwrite IN", cursive;
