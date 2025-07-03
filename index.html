@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+     <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Jagadesh</title>
 </head>
 <body>
+
+    
+
     <div class="up-top">
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
     <nav class="nav-bar">
         <h1>jagz.in</h1>
-        <ul>
-            <li><a href="#home">home</a></li>
+        <ul class="navmenu">
+            <li><a href="#home" class="active">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#education">education</a></li>
             <li><a href="#skills">skills</a></li>
@@ -25,57 +29,31 @@
         </ul>
     </nav>
 
-<main>
      <section id="home">
         <div class="hbox"></div>
-        <div class="left">
+        <div class="left slide-in">
             <img src="assets/WhatsApp Image 2025-06-27 at 12.23.59 PM.jpeg" alt="">
             <img src="assets/mobile-profile.png" alt="">
         </div>
         <div class="right">
-            <h1>Jagadesh waran</h1>
+            <h1 class="slide-right">Jagadesh waran</h1>
             <p>an aspiring software engineer.</p>
         </div>
     </section>
+    <div class="decorate-container">
+<img class="decorate-line" src="assets/decorative-line-divider-design.png" alt="">
 
+    </div>
     <section id="about">
-        <h1>about</h1>
+        <h1 class="heading slide-up">about</h1>
 
         <div class="para">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, voluptatem nam magni cum labore itaque, praesentium expedita, nisi in impedit quia omnis laborum ipsa natus sint provident nemo. Possimus beatae voluptates exercitationem ullam perspiciatis excepturi minus in fugiat cumque! Voluptates, suscipit aliquam vitae amet sed provident reiciendis molestias in dolore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe in ducimus quaerat fugiat necessitatibus nisi? Qui, at eveniet enim, rem commodi iusto maxime unde aspernatur dolore impedit quibusdam assumenda. Voluptatum at id molestiae cupiditate culpa. Ullam accusantium quaerat, consequuntur quia molestias modi ad eos quibusdam magni numquam cupiditate laboriosam eveniet.</p>
+            <p>Hi! I'm an engineering student with a passion for technology and creative problem-solving. I have hands-on experience with HTML and CSS, and I'm currently exploring the world of JavaScript to build more interactive web projects. I enjoy bringing ideas to life through clean, responsive design.
+
+Outside of coding, I love watching series, playing video games, and staying organized with a scheduled study routine. I'm always eager to learn new skills and take on exciting challenges that help me grow as a developer.</p>
         </div>
-        <h1>expertise</h1>
-        <div class="card-wrapper">
-            <h3>languages</h3>
-            <div class="card-container">
-                
-                <div class="card"><img src="assets/javascript-svgrepo-com.svg" alt=""><p>javascript</p></div>
-                <div class="card"><img src="assets/python-svgrepo-com.svg" alt=""><p>python</p></div>
-
-            </div>
-            <h3>front-end</h3>
-            <div class="card-container">
-                
-                <div class="card"><img src="assets/html-5-svgrepo-com.svg" alt=""><p>html</p></div>
-                <div class="card"><img src="assets/css-3-svgrepo-com.svg" alt=""><p>css</p></div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="education">
-        <h1>education</h1>
-        <table class="edu-table">
-            <tr><th>degree</th><th>institution</th></tr>
-            <tr><th>sslc</th><td>st.thomas metric hr sec schools,chennai-600068</td></tr>
-             <tr><th>hsc</th><td>st.thomas metric hr sec schools,chennai-600068</td></tr>
-            <tr><th style="text-decoration: overline;">b.tech</th><td>veltech multi tech dr.rangarajan dr.skunthala engineering college</td></tr>
-        </table>
-    </section>
-
-    <section id="skills">
-        <h1>skills</h1>
-        <div class="skill">
+        <h1 class="heading slide-up">expertise</h1>
+         <div class="expertise slide-right">
             <h2>html</h2>
            <div class="description">
             <h3> Beginner HTML Skills</h3>
@@ -90,7 +68,7 @@
            </div>
         </div>
 
-                <div class="skill">
+                <div class="expertise slide-left">
             <h2>css</h2>
            <div class="description">
             <h3> Beginner css Skills</h3>
@@ -110,7 +88,7 @@
            </div>
         </div>
 
-        <div class="skill">
+        <div class="expertise slide-right">
             <h2>java script</h2>
            <div class="description">
             <h3>  Beginner JavaScript Skills</h3>
@@ -119,19 +97,98 @@
             </p>
            </div>
         </div>
+       
     </section>
 
+      <div class="decorate-container">
+<img class="decorate-line" src="assets/decorative-line-divider-design.png" alt="">
+
+    </div>
+
+    <section id="education">
+        <h1 class="heading slide-up">education</h1>
+
+       <div class="edu-wrapper">
+        <div class="edu-container slide-left">
+         
+            <p>2019 - 2020</p>
+            <h2>secondary school</h2>
+            <p>st.thomas metric hr sec schools,chennai-600068</p>
+        </div>
+        <div class="edu-line-box slide-left"></div>
+          <div class="edu-container slide-right">
+            <p>2020 - 2022</p>
+            <h2>higher secondary school</h2>
+            <p>st.thomas metric hr sec schools,chennai-600068</p>
+        </div>
+          <div class="edu-line-box slide-left"></div>
+          <div class="edu-container slide-left">
+            <p>2023 - present</p>
+            <h2>bachelor of technology(b.tech)</h2>
+            <p>veltech multi tech dr.rangarajan dr.skunthala engineering college</p>
+        </div>
+       </div>
+
+        <div class="experience">
+            <h1 class="heading slide-up">experience</h1>
+              <div class="edu-wrapper">
+        <div class="edu-container slide-right">
+            <p>2024</p>
+            <h2>Front-end internship</h2>
+            <p>velozity global solutions</p>
+        </div>
+        <div class="edu-line-box exp-line slide-right"></div>
+        <div class="edu-container slide-left">
+            <p>2025</p>
+            <h2>javascript internship</h2>
+            <p>top tech developers</p>
+        </div>
+        </div>
+        
+        
+    </section>
+
+      <div class="decorate-container">
+<img class="decorate-line" src="assets/decorative-line-divider-design.png" alt="">
+
+    </div>
+
+    <section id="skills">
+        <h1 class="heading slide-up">skills</h1>
+        <div class="card-wrapper">
+            <h3>languages</h3>
+            <div class="card-container slide-in">
+                
+                <div class="card slide-right"><img src="assets/javascript-svgrepo-com.svg" alt=""><p>javascript</p></div>
+                <div class="card slide-right"><img src="assets/python-svgrepo-com.svg" alt=""><p>python</p></div>
+                <div class="card slide-right"><img src="assets/java-svgrepo-com.svg" alt=""><p>java</p></div>
+            </div>
+            <h3>front-end</h3>
+            <div class="card-container">
+                
+                <div class="card slide-right"><img src="assets/html-5-svgrepo-com.svg" alt=""><p>html</p></div>
+                <div class="card slide-right"><img src="assets/css-3-svgrepo-com.svg" alt=""><p>css</p></div>
+            </div>
+
+        </div>
+    </section>
+
+      <div class="decorate-container">
+<img class="decorate-line" src="assets/decorative-line-divider-design.png" alt="">
+
+    </div>
+    
     <section id="contact">
-        <h1>contact</h1>
+        <h1 class=" heading slide-up">contact</h1>
         <div class="contact-wrapper">
             <div class="contact-left">
                 <div class="clip-box"></div>
             <h2>lets <span>talk</span>.</h2>
-            <div class="input-container">
-                 <input type="text" placeholder="name" required><br>
-                <input type="email" placeholder="E-mail" required><br>
-                <textarea name="message" id="message" placeholder="message"></textarea><br>
-               <div class="btn"> <button>post</button></div>
+            <div class="input-container slide-right">
+                 <input type="text" placeholder="name" required class="mail-name"><br>
+                <input type="email" placeholder="E-mail" required class="mail-email"><br>
+                <textarea name="message" id="message" placeholder="message" class="mail-message"></textarea><br>
+               <div class="btn"><button class="post">post</button></div>
             </div>
             
         </div>
@@ -153,11 +210,32 @@
         </div>
         
     </section>
-</main>
    <footer>
-    <p>made with passion by <span> jagz</span>.</p>
+    <p>made with &#128420 by <span> jagz</span>.</p>
    </footer>
+
+   <div class="socials">
+        <div class="line">
+        </div>
+        <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+    <div class="socials-mail">
+        <div class="line">
+        </div>
+        <div class="social-icons">
+            <a href="mailto:jagz07x@gmail.com?subject=hello&body=message.">jagz07x@gmail.com</a>
+        </div>
+    </div>
 <!-- script Linking -->
     <script src="https://kit.fontawesome.com/4435ab871f.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+     
+
 </body>
 </html>
