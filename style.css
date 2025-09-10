@@ -554,6 +554,10 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     position: relative;
     clip-path: polygon(61% 0, 96% 65%, 50% 100%, 0 74%);
 }
+.image-box:hover{
+    filter: grayscale(0);
+}
+
 .clip-box{
     width: 20rem;
     height: 20rem;
