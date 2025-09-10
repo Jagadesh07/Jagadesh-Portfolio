@@ -16,6 +16,9 @@
     --text-color:black;
     --highlight-color:gray;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     min-height: 100vh;
     width: 100vw;
@@ -303,11 +306,10 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     padding:  1rem 2rem;
     grid-template-columns: 25% 75%;
     row-gap: 1rem;
-    max-width: 100%;
     column-gap: 2rem;
 }
 .description img{
-    max-width: 100%;
+    width: 100%;
     border: 2px solid black;
 }
 
