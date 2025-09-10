@@ -1,7 +1,7 @@
 // scroll-reveal
 function revealFunction(){
     window.sr = ScrollReveal({
-        duration:'500',distance: '50px',easing: 'ease-in'
+        duration:'500',distance: '50px',easing: 'ease-in',reset: true
     })
     sr.reveal('.slide-right',{origin:'left'})
     sr.reveal('.slide-left',{origin:'right'})
