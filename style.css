@@ -286,19 +286,12 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .expertise{
     border: 2px solid black;
     margin: 2rem;
+    padding: 2rem 0;
     border-radius: 10px;
     width: 70%;
     box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.205);
-    
 }
-.expertise h2{
-    font-family: var(--main-font);
-    margin-left: 2rem;
-    color: var(--text-color);
-    font-size: calc(var(--pc-header-size)/1.5) ;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
+
 .description h3{
     font-family: var(--main-font);
     margin-left: 1rem;
@@ -308,18 +301,54 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .description{
     display: grid;
     padding:  1rem 2rem;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: 25% 75%;
     row-gap: 1rem;
+    max-width: 100%;
     column-gap: 2rem;
 }
+.description img{
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+.tech{
+    background-color: rgba(238, 235, 235, 0.808);
+    /* box-shadow: 1px 6px 5px 2px rgba(179, 172, 172, 0.445); */
+    border-radius: 30px;
+    border: 1px solid rgba(88, 76, 76, 0.685);
+    padding: .2rem .6rem;
+    width: fit-content;
+    font-family: var(--main-font);
+    text-transform: capitalize;
+}
+.tech-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.description h2{
+    display: inline;
+    font-family: var(--main-font);
+    margin: 1rem;
+    color: var(--text-color);
+    font-size: calc(var(--pc-header-size)/1.5);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.description i {
+    transition: .5s ease;
+    text-decoration: none;
+    color: black;
+}
+.description i:hover{
+    transform: scale(1.2);
+}
 .description p{
+    padding: 2rem 3rem 2rem 0 ;
     font-family: var(--main-font);
     font-size:calc(var(--pc-main-size)/1.5) ;
     color: var(--text-color);
 }
-
-
-
 /* education */
 
 .edu-wrapper{
@@ -682,6 +711,9 @@ footer p span{
     .card{
         height: 2rem;
         padding: .5rem;
+    }
+    .description{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 @media(max-width:450px){
