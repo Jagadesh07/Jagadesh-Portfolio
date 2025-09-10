@@ -321,6 +321,9 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     font-family: var(--main-font);
     text-transform: capitalize;
 }
+.tech:hover{
+    background-color: white;
+}
 .tech-container{
     display: flex;
     flex-wrap: wrap;
@@ -334,6 +337,9 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     font-size: calc(var(--pc-header-size)/1.5);
     letter-spacing: 5px;
     text-transform: uppercase;
+}
+.description a{
+    align-content: center;
 }
 .description i {
     transition: .5s ease;
