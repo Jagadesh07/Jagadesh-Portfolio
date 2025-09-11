@@ -37,11 +37,12 @@ window.addEventListener("scroll",scrollTracker);
 
 
 // mail
+
+function sendMail(){
     const name = document.querySelector('.mail-name').value;
     const email = document.querySelector('.mail-email').value;
     const message = document.querySelector('.mail-message').value;
 
-function sendMail(){
     const subject = encodeURIComponent(`Message from: ${name}`);
     const body = encodeURIComponent(`Email: ${email} \n\n ${message} `);
 
