@@ -515,10 +515,11 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     border: 1px solid var(--text-color);
     border-radius: 5px;
     font-family: var(--main-font);
-    font-size: var(--pc-main-size);
+    width: 100%;
 }
 .input-container textarea{
     padding: 2rem 3rem 4rem 3rem;
+    width: 100%;
     margin: 1rem;
     color: var(--text-color);
     border: 1px solid var(--text-color);
@@ -662,8 +663,7 @@ footer p span{
     .card-wrapper{
         padding: 2rem 10% 0 10%;
     }
-       .edu-line-box{document.querySelector('.js-theme-icon').classList.remove('fa-moon');
-        document.querySelector('.js-theme-icon').classList.add('fa-sun');
+       .edu-line-box{
         height: 3rem;
         left: 15%;
     }
