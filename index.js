@@ -57,3 +57,33 @@ mailBtn.addEventListener('click', () => {
     document.querySelector('.mail-email').value = '';
     document.querySelector('.mail-message').value = '';
 });
+
+// theme-change
+const root = document.querySelector(':root');
+let dark = false;
+document.querySelector('.js-theme-switch').addEventListener('click', () => {
+    if(!dark){
+        root.style.setProperty('--page-color', 'rgb(36, 36, 36)');
+        root.style.setProperty('--text-color', 'white');
+        root.style.setProperty('--body-color', 'rgb(36, 36, 36)');
+        root.style.setProperty('--highlight-color', 'rgba(177, 18, 18, 1)');
+        root.style.setProperty('--input-box-color','rgba(66, 55, 55, 0.74)')
+        root.style.setProperty( '--clip-box-color','rgba(155, 132, 132, 0.88)');
+        root.style.setProperty('--highlight-text-color','rgba(230, 190, 190, 1)')
+        document.querySelector('.js-theme-icon').classList.remove('fa-moon');
+        document.querySelector('.js-theme-icon').classList.add('fa-sun');
+        dark = true;
+    }
+    else{
+        root.style.setProperty('--page-color', 'white');
+        root.style.setProperty('--body-color', 'white');
+        root.style.setProperty('--text-color', 'black');
+        root.style.setProperty('--highlight-color', 'gray');
+        root.style.setProperty('--highlight-text-color','rgb(68, 62, 62)')
+        root.style.setProperty('--input-box-color','rgba(255, 255, 255, 0.74)')
+        root.style.setProperty( '--clip-box-color','rgba(214, 206, 206, 0.884)');
+        document.querySelector('.js-theme-icon').classList.add('fa-moon');
+        document.querySelector('.js-theme-icon').classList.remove('fa-sun');
+        dark = false;
+    }
+})

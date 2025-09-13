@@ -8,18 +8,24 @@
 }
 
 :root{
+    --body-color: white;
     --main-font:'poppins';
     --header-font:"Playwrite IN", cursive;
     --pc-header-size: 2.5rem;
     --pc-main-size:1.5rem;
     --page-color:white;
     --text-color:black;
+    --highlight-text-color:rgb(68, 62, 62);
     --highlight-color:gray;
+    --clip-box-color:rgba(214, 206, 206, 0.884);
+    --tech-items-color:rgba(238, 235, 235, 0.808);
+    --input-box-color:rgba(255, 255, 255, 0.74);
 }
 html{
     overflow-x: hidden;
 }
 body{
+    background-color: var(--body-color);
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -32,8 +38,23 @@ body{
     width: 100%;
     justify-content: space-between;
     padding: .5rem 2rem;
-    background-color: var(--page-color);
+    background-color: var(--body-color);
     z-index: 99;
+}
+.logo-theme-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-theme-container button {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: .6rem .7rem;
+    margin-right: 2rem;
+    background: none;
+}
+.logo-theme-container i{
+    color: var(--text-color);
 }
 .nav-bar h1{
     font-family: var(--header-font);
@@ -189,7 +210,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     justify-content: center;
     align-items: center;
     background-color: var(--highlight-color);
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -222,7 +243,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
   
 }
 .hbox{
-    background-color: rgba(214, 206, 206, 0.884);
+    background-color: var(--clip-box-color);
     position: absolute;
     width: 50%;
     height: 100%;
@@ -287,7 +308,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 }
 
 .expertise{
-    border: 2px solid black;
+    border: 2px solid var(--text-color);
     margin: 2rem;
     padding: 2rem 0;
     border-radius: 10px;
@@ -310,11 +331,11 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 }
 .description img{
     width: 100%;
-    border: 2px solid black;
+    border: 2px solid var(--text-color);
 }
 
 .tech{
-    background-color: rgba(238, 235, 235, 0.808);
+    background-color: var(--tech-items-color);
     /* box-shadow: 1px 6px 5px 2px rgba(179, 172, 172, 0.445); */
     border-radius: 30px;
     border: 1px solid rgba(88, 76, 76, 0.685);
@@ -324,7 +345,8 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     text-transform: capitalize;
 }
 .tech:hover{
-    background-color: white;
+    background-color: var(--text-color);
+    color: var(--page-color);
 }
 .tech-container{
     display: flex;
@@ -346,7 +368,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .description i {
     transition: .5s ease;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 .description i:hover{
     transform: scale(1.2);
@@ -378,7 +400,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     position: relative;
     padding: 3rem;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--text-color);
     box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.205);
 }
 .edu-container h2{
@@ -393,7 +415,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 
 }
 .edu-container p:first-child{
-    color: rgb(68, 62, 62);
+    color: var(--highlight-text-color);
 }
 .edu-container h2,.edu-container p{
     font-family: var(--main-font);
@@ -433,7 +455,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     border-radius: 30px;
     width: fit-content;
     height: 1.5rem;
-    border: 2px solid black;
+    border: 2px solid var(--text-color);
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.253);
     align-items: center;
     justify-content: start;
@@ -488,8 +510,9 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .input-container input{
     padding: 1rem 3rem;
     margin: 1rem;
-    background-color: rgba(255, 255, 255, 0.74);
-    border: 1px solid black;
+    color: var(--text-color);
+    background-color: var(--input-box-color);
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     font-family: var(--main-font);
     font-size: var(--pc-main-size);
@@ -497,10 +520,11 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .input-container textarea{
     padding: 2rem 3rem 4rem 3rem;
     margin: 1rem;
-    border: 1px solid black;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     resize: none;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: var(--input-box-color);
     box-sizing: border-box;
     font-family: var(--main-font);
     font-size: var(--pc-main-size);
@@ -511,8 +535,8 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     border-radius: 5px;
     border: 1px solid black;
     cursor: pointer;
-    background-color: var(--highlight-color);
-    color: var(--page-color);
+    background-color: var(--clip-box-color);
+    color: var(--text-color);
     font-size: var(--pc-main-size);
     text-transform: capitalize;
     transition: .5s ease;
@@ -563,7 +587,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .clip-box{
     width: 20rem;
     height: 20rem;
-    background-color: rgba(214, 206, 206, 0.466);
+    background-color: var(--clip-box-color);
     position: absolute;
     z-index: -2;
     clip-path: polygon(61% 0, 96% 65%, 50% 100%, 0 74%);
@@ -579,7 +603,7 @@ footer{
     align-items: center;
 }
 footer p{
-    color: var(--highlight-color);
+    color: var(--highlight-text-color);
     font-family: var(--main-font);
     font-size: 1rem;
 }
@@ -638,7 +662,8 @@ footer p span{
     .card-wrapper{
         padding: 2rem 10% 0 10%;
     }
-       .edu-line-box{
+       .edu-line-box{document.querySelector('.js-theme-icon').classList.remove('fa-moon');
+        document.querySelector('.js-theme-icon').classList.add('fa-sun');
         height: 3rem;
         left: 15%;
     }
@@ -676,8 +701,17 @@ footer p span{
         display: none;
     }
     .nav-bar{
-        justify-content: center;
+        justify-content: start;
         padding: 1rem 0;
+    }
+    .logo-theme-container{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .logo-theme-container button{
+        margin: 0;
     }
   #about,#education,#skills,#contact{
     min-height: fit-content;
