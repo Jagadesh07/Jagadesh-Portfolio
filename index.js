@@ -38,25 +38,61 @@ window.addEventListener("scroll",scrollTracker);
 
 // mail
 
-function sendMail(){
-    const name = document.querySelector('.mail-name').value;
-    const email = document.querySelector('.mail-email').value;
-    const message = document.querySelector('.mail-message').value;
+// function sendMail(){
+//     const name = document.querySelector('.mail-name').value;
+//     const email = document.querySelector('.mail-email').value;
+//     const message = document.querySelector('.mail-message').value;
 
-    const subject = encodeURIComponent(`Message from: ${name}`);
-    const body = encodeURIComponent(`Email: ${email} \n\n ${message} `);
+//     const subject = encodeURIComponent(`Message from: ${name}`);
+//     const body = encodeURIComponent(`Email: ${email} \n\n ${message} `);
 
-    window.location.href = `mailto:jagz07x@gmail.com?subject=${subject}&body=${body}.`;
+//     window.location.href = `mailto:jagz07x@gmail.com?subject=${subject}&body=${body}.`;
+// }
+
+// const mailBtn = document.querySelector('.post');
+
+// mailBtn.addEventListener('click',sendMail);
+// mailBtn.addEventListener('click', () => {
+    // document.querySelector('.mail-name').value = '';
+    // document.querySelector('.mail-email').value = '';
+    // document.querySelector('.mail-message').value = '';
+// });
+
+//mail-js
+
+// Send mail function
+function sendMail() {
+    let params = {
+        name: document.querySelector('.mail-name').value,
+        email: document.querySelector('.mail-email').value,
+        message: document.querySelector('.mail-message').value
+    };
+
+    const serviceId = 'service_nj54jg5';
+    const templateID = 'template_ua24ine';
+
+    emailjs.send(serviceId, templateID, params)
+        .then(() => {
+            alert('Mail sent.');
+            clearForm();
+        })
+        .catch((error) => {
+            console.error('Failed to send email:', error);
+            alert('Failed to send email. Please try again.');
+        });
 }
 
-const mailBtn = document.querySelector('.post');
-
-mailBtn.addEventListener('click',sendMail);
-mailBtn.addEventListener('click', () => {
+function clearForm() {
     document.querySelector('.mail-name').value = '';
     document.querySelector('.mail-email').value = '';
     document.querySelector('.mail-message').value = '';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.post').addEventListener('click', sendMail);
 });
+
+
 
 // theme-change
 const root = document.querySelector(':root');
