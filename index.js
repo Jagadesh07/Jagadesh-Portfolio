@@ -62,7 +62,25 @@ mailBtn.addEventListener('click', () => {
 const root = document.querySelector(':root');
 let dark = false;
 document.querySelector('.js-theme-switch').addEventListener('click', () => {
-    if(!dark){
+  setTheme();
+})
+
+function loadThemeLocalStorage(){
+    const theme = localStorage.getItem('theme');
+
+    if(theme === 'dark'){
+        dark = false;
+        setTheme();
+    }
+    else{
+        dark = true;
+        setTheme();
+    }
+}
+
+function setTheme(){
+  if(!dark){
+        localStorage.setItem('theme','dark');
         root.style.setProperty('--page-color', 'rgb(36, 36, 36)');
         root.style.setProperty('--text-color', 'white');
         root.style.setProperty('--body-color', 'rgb(36, 36, 36)');
@@ -75,6 +93,7 @@ document.querySelector('.js-theme-switch').addEventListener('click', () => {
         dark = true;
     }
     else{
+        localStorage.setItem('theme','light')
         root.style.setProperty('--page-color', 'white');
         root.style.setProperty('--body-color', 'white');
         root.style.setProperty('--text-color', 'black');
@@ -86,4 +105,8 @@ document.querySelector('.js-theme-switch').addEventListener('click', () => {
         document.querySelector('.js-theme-icon').classList.remove('fa-sun');
         dark = false;
     }
-})
+}
+
+window.addEventListener('DOMContentLoaded',() => {
+    loadThemeLocalStorage();
+});

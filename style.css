@@ -56,6 +56,9 @@ body{
 .logo-theme-container i{
     color: var(--text-color);
 }
+.fa-moon{
+    padding: 0 .1rem;
+}
 .nav-bar h1{
     font-family: var(--header-font);
     font-size: var(--pc-header-size);
@@ -515,11 +518,11 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     border: 1px solid var(--text-color);
     border-radius: 5px;
     font-family: var(--main-font);
-    width: 100%;
+    width: 90%;
 }
 .input-container textarea{
     padding: 2rem 3rem 4rem 3rem;
-    width: 100%;
+    width: 90%;
     margin: 1rem;
     color: var(--text-color);
     border: 1px solid var(--text-color);
@@ -774,22 +777,4 @@ footer p span{
      .left img:nth-child(2){
         width: 20rem;
      }
-}
-
-/* keyframes */
-.slide-in{
-    animation: slide-in both;
-    animation-timeline: view(5%,10%);
-}
-
-
-@keyframes slide-in {
-    from{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
