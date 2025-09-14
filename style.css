@@ -382,6 +382,9 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     font-size:calc(var(--pc-main-size)/1.5) ;
     color: var(--text-color);
 }
+.project-dark{
+    display: none;
+}
 /* education */
 
 .edu-wrapper{

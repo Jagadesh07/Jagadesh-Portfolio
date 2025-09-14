@@ -126,6 +126,9 @@ function setTheme(){
         root.style.setProperty('--highlight-text-color','rgba(230, 190, 190, 1)')
         document.querySelector('.js-theme-icon').classList.remove('fa-moon');
         document.querySelector('.js-theme-icon').classList.add('fa-sun');
+
+        document.querySelectorAll('.project-light').forEach(el => el.style.setProperty('display','none'));
+        document.querySelectorAll('.project-dark').forEach(el => el.style.setProperty('display','block'));
         dark = true;
     }
     else{
@@ -139,6 +142,8 @@ function setTheme(){
         root.style.setProperty( '--clip-box-color','rgba(214, 206, 206, 0.884)');
         document.querySelector('.js-theme-icon').classList.add('fa-moon');
         document.querySelector('.js-theme-icon').classList.remove('fa-sun');
+        document.querySelectorAll('.project-light').forEach(el => el.style.setProperty('display','block'));
+        document.querySelectorAll('.project-dark').forEach(el => el.style.setProperty('display','none'));
         dark = false;
     }
 }
