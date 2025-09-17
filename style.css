@@ -131,7 +131,14 @@ body{
 html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     visibility: none;
 }
-
+.fa-up-right-from-square {
+    transition: .5s ease;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.fa-up-right-from-square:hover{
+    transform: scale(1.2);
+}
 /* nav-active */
 .active{
     color: var(--highlight-color) !important;
@@ -371,14 +378,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .description a{
     align-content: center;
 }
-.description i {
-    transition: .5s ease;
-    text-decoration: none;
-    color: var(--text-color);
-}
-.description i:hover{
-    transform: scale(1.2);
-}
+
 .description p{
     padding: 2rem 3rem 2rem 0 ;
     font-family: var(--main-font);
@@ -517,7 +517,7 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 }
 .contact-left p{
     color: var(--text-color);
-    font-family: var(--header-font);
+    font-family: var(--main-font);
 }
 .contact-left{
     display: grid;
@@ -585,27 +585,27 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     width: 20rem;
     height: 20rem;
 }
-.image-container img{
+.image-box img{
     width: 20rem;
     filter: grayscale(1);
     clip-path: polygon(61% 0, 96% 65%, 50% 100%, 0 74%);
 }
 .image-box{
-    background: url(assets/tree.jpg);
-    background-position:bottom;
-    background-size: cover;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
     width: 20rem;
     height: 20rem;
-    background-repeat: no-repeat;
     filter: grayscale(1);
-    overflow: hidden;
     position: relative;
+    cursor: pointer;
     clip-path: polygon(61% 0, 96% 65%, 50% 100%, 0 74%);
+}
+.image-box:hover .contact-profile-pic{
+    filter: grayscale(0) !important;
 }
 .image-box:hover{
     filter: grayscale(0);
 }
-
 .clip-box{
     width: 20rem;
     height: 20rem;
