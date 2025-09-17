@@ -237,6 +237,9 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 .decorate-line{
     width: 20%;
 }
+.decorate-white{
+    display: none;
+}
 /* home */
 #home{
     display: grid;
@@ -436,6 +439,14 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     align-self: flex-start;
     left: 20%;
 }
+.exp-period{
+    position: absolute;
+    right: 0;
+    color: var(--highlight-text-color) !important;
+    margin-right: 1rem;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+}
 .exp-line{
     left: 80%;
 }
@@ -503,6 +514,10 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
 }
 .contact-left h2 span{
     color: var(--highlight-color);
+}
+.contact-left p{
+    color: var(--text-color);
+    font-family: var(--header-font);
 }
 .contact-left{
     display: grid;
