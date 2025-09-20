@@ -66,14 +66,12 @@ const inputs = document.querySelectorAll(".input");
 inputs.forEach((input,index) => {
     input.addEventListener('keydown',(Event) => {
         let nextInput;
-        let f = 0
         if(Event.key === 'Enter'){
             Event.preventDefault();
             nextInput = inputs[index +1];
         
         if(nextInput){
             nextInput.focus();
-            f++;
         }
         else{
             sendMail();
