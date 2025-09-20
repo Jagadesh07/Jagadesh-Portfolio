@@ -61,6 +61,28 @@ window.addEventListener("scroll",scrollTracker);
 //mail-js
 
 // Send mail function
+const inputs = document.querySelectorAll(".input");
+
+inputs.forEach((input,index) => {
+    input.addEventListener('keydown',(Event) => {
+        let nextInput;
+        let f = 0
+        if(Event.key === 'Enter'){
+            Event.preventDefault();
+            nextInput = inputs[index +1];
+        
+        if(nextInput){
+            nextInput.focus();
+            f++;
+        }
+        else{
+            sendMail();
+        }
+    }
+    })
+})
+    const email = document.querySelector('.mail-email');
+    const message = document.querySelector('.mail-message');
 function sendMail() {
     let params = {
         name: document.querySelector('.mail-name').value,
