@@ -55,6 +55,10 @@ body{
 }
 .logo-theme-container i{
     color: var(--text-color);
+    transition: .5s ease;
+}
+.fa-sun:hover{
+    transform: rotateZ(100deg);
 }
 .fa-moon{
     padding: 0 .1rem;
