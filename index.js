@@ -37,26 +37,27 @@ window.addEventListener("scroll",scrollTracker);
 
 
 // mail
+/* old school email sending method it takes you to mail directly after you press post
+function sendMail(){
+    const name = document.querySelector('.mail-name').value;
+    const email = document.querySelector('.mail-email').value;
+    const message = document.querySelector('.mail-message').value;
 
-// function sendMail(){
-//     const name = document.querySelector('.mail-name').value;
-//     const email = document.querySelector('.mail-email').value;
-//     const message = document.querySelector('.mail-message').value;
+    const subject = encodeURIComponent(`Message from: ${name}`);
+    const body = encodeURIComponent(`Email: ${email} \n\n ${message} `);
 
-//     const subject = encodeURIComponent(`Message from: ${name}`);
-//     const body = encodeURIComponent(`Email: ${email} \n\n ${message} `);
+    window.location.href = `mailto:jagz07x@gmail.com?subject=${subject}&body=${body}.`;
+}
 
-//     window.location.href = `mailto:jagz07x@gmail.com?subject=${subject}&body=${body}.`;
-// }
+const mailBtn = document.querySelector('.post');
 
-// const mailBtn = document.querySelector('.post');
-
-// mailBtn.addEventListener('click',sendMail);
-// mailBtn.addEventListener('click', () => {
-    // document.querySelector('.mail-name').value = '';
-    // document.querySelector('.mail-email').value = '';
-    // document.querySelector('.mail-message').value = '';
-// });
+mailBtn.addEventListener('click',sendMail);
+mailBtn.addEventListener('click', () => {
+    document.querySelector('.mail-name').value = '';
+    document.querySelector('.mail-email').value = '';
+    document.querySelector('.mail-message').value = '';
+});
+*/
 
 //mail-js
 

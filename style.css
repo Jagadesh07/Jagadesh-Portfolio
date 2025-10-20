@@ -37,7 +37,7 @@ body{
     top: 0;
     width: 100%;
     justify-content: space-between;
-    padding: .5rem 2rem;
+    padding-inline: 1.5rem;
     background-color: var(--body-color);
     z-index: 99;
 }
@@ -45,11 +45,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 .logo-theme-container button {
     border: 1px solid var(--text-color);
     border-radius: 5px;
-    padding: .6rem .7rem;
+    padding: .6rem;
     margin-right: 2rem;
     background: none;
 }
@@ -727,7 +728,7 @@ footer p span{
     }
     .nav-bar{
         justify-content: start;
-        padding: 1rem 0;
+        padding: .5rem 0;
     }
     .logo-theme-container{
         width: 100%;
