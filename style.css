@@ -533,6 +533,10 @@ html.sr .slide-up,html.sr .slide-right,html.sr .slide-left{
     grid-template-columns: repeat(1,1fr);
     justify-items: center;
 }
+.input-container p{
+    display: none;
+    margin-bottom: 1rem;
+}
 .input-container input{
     padding: 1rem 3rem;
     margin: 1rem;

@@ -94,7 +94,7 @@ function sendMail() {
 
     emailjs.send(serviceId, templateID, params)
         .then(() => {
-            alert('Mail sent.');
+            document.querySelector(".mail-sent").style.display = "block";
             clearForm();
         })
         .catch((error) => {
@@ -107,6 +107,9 @@ function clearForm() {
     document.querySelector('.mail-name').value = '';
     document.querySelector('.mail-email').value = '';
     document.querySelector('.mail-message').value = '';
+    setTimeout(() => {
+        document.querySelector(".mail-sent").style.display = "none";
+    }, 2000);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
